@@ -1,5 +1,5 @@
 # Keystroke32
-STM32F103 based board to reuse (some) old laptop keyboards
+STM32F103 based board to transform (some) old laptop keyboards into proper USB keyboards. If you like laptop keyboards in general or just miss your old laptop keyboard, this could be a fun project for you!
 
 
 ## TESTED WITH KEYBOARDS:
