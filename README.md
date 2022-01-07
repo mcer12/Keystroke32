@@ -3,8 +3,11 @@ STM32F103 based board to transform (some) old laptop keyboards into proper USB k
 
 
 ## TESTED WITH KEYBOARDS:
+- ZH9 (Acer Aspire One)  
+- 365485-221 (HP Compaq nc6110)  
+- ZL1 (Acer TravelMate 4000)  
 
-In general, the keyboards need to have a flex cable with 1mm pitch connector and maximum of 27 active pins (26 pins if you want to use SCROLL LOCK led). If your keyboard has more pins than that, it's very likely that some of the pins are not connected. If those inactive pins are at the edge of the connector, you can simply (very carefully) cut the edge of the connector with scissors. The board has a 30-pin connector with 3 left-most pins disconnected. So if your keyboard matches that, no cutting is needed.
+In general, the keyboards need to have a flex cable with 1mm pitch connector and maximum of 27 active pins (26 pins if you want to use SCROLL LOCK led). If your keyboard has more pins than that, it's very likely that some of the pins are not connected. If those inactive pins are at the edge of the connector, you can simply (very carefully) cut the edge of the connector with precision scissors. The board has a 30-pin connector with 3 left-most pins disconnected. So if your keyboard matches that, no cutting is needed.
 
 Some boards have the connector with pins facing up, some with pins facing down, so make sure you have the correct connector before you solder it on the board ;)
 
@@ -13,4 +16,4 @@ Some boards have the connector with pins facing up, some with pins facing down, 
 To map the keys, there's a mapping mode in the sketch, just uncomment "#define MAPPING_MODE" at line 29. All it does is - it outputs every pushed key in the serial console in a arduino-compatible format. So just go through all buttons (I suggest going row by row) and once you're done, just copy & paste the output to the mappedPins variable in the sketch. After that, you can start adding functions to the keys - all relevant functions should be in the comment in the sketch. You can also use the predefined keyboards as an example.
 
 ## Possible issues:
-- if some of the keys don't work, try to unplug the keyboard, clean the pins with isopropyl alcohol, and replug.
+- if some of the keys don't seem to work, try to unplug the keyboard, clean the pins with isopropyl alcohol, and replug.
